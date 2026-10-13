@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objetos, Dados e Assincronismo – Semana 05</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1rem; }
+    section { margin-bottom: 2.5rem; }
+    input, button { padding: .5rem; margin-right: .25rem; }
+    .status { min-height: 1.5rem; margin: .5rem 0; }
+    .status.erro { color: #b91c1c; }
+    dt { font-weight: bold; margin-top: .5rem; }
+    dd { margin: 0; }
+    .card img { width: 120px; height: 120px; }
+  </style>
+</head>
+<body>
+  <h1>Semana 05 – APIs e Assincronismo</h1>
+  <p>Parte 1 (validação de pedidos) é exibida no Console (F12).</p>
+
+  <section>
+    <h2>Buscador de CEP</h2>
+    <form id="form-cep">
+      <input id="cep" type="text" placeholder="Ex.: 01001000" inputmode="numeric" autocomplete="off">
+      <button id="btn-cep" type="submit">Buscar</button>
+    </form>
+    <p id="status-cep" class="status" role="status"></p>
+    <dl id="resultado-cep"></dl>
+    <h3>Histórico</h3>
+    <ul id="historico-cep"></ul>
+  </section>
+
+  <section>
+    <h2>Mini Pokédex</h2>
+    <form id="form-poke">
+      <input id="pokemon" type="text" placeholder="Ex.: pikachu" autocomplete="off">
+      <button id="btn-poke" type="submit">Buscar</button>
+    </form>
+    <p id="status-poke" class="status" role="status"></p>
+    <div id="resultado-poke" class="card"></div>
+  </section>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
